@@ -18,3 +18,5 @@ const userSchema = new mongoose.Schema({
     }, {timeseries: true}); //each user will have two extra info. The time they were created and the time they were last updated
 
 const User = mongoose.model('User', userSchema); // User must me uppercase and singular
+
+export default User;
